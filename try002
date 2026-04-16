@@ -9,7 +9,7 @@ import win32gui
 import win32api
 import win32con
 from multiprocessing import Process, freeze_support
-
+ 
 # ==========================================
 # 🎯 系統全域配置 & 啟動設定
 # ==========================================
