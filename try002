@@ -16,11 +16,11 @@ from multiprocessing import Process, freeze_support
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 GAME_INSTANCES = [
-    (458, 647),   # 預設盤面 1
-    # (1200, 647), # 預設盤面 2
+    (366, 1091),   # 預設盤面 1
+    (2087, 1091), # 預設盤面 2
 ]
 
-GRID_W, GRID_H = 85, 48
+GRID_W, GRID_H = 68, 38
 TOTAL_MINES = 5
 RISK_ZONES = [(3, 1), (4, 1)]
 
@@ -166,7 +166,7 @@ class MinesweeperGame:
         self.base_x = base_x
         self.base_y = base_y
         
-        self.flag_btn = (base_x - 5, base_y + 236)
+        self.flag_btn = (base_x , base_y + 190)
         self.fixed_centers = [[(base_x + c * GRID_W, base_y + r * GRID_H) for c in range(5)] for r in range(5)]
         
         self.last_grid_str = ""
