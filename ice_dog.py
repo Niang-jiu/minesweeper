@@ -8,7 +8,7 @@ import pyautogui
 import keyboard
 
 # ==========================================
-# 🎯 大少爺的專屬設定區
+# 設定區
 # ==========================================
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
